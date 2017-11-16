@@ -8,3 +8,13 @@
 // // returns {odds: 2, evens: 3}
 // countOddsAndEvens([1, 2, 3, 4, 5, 5, 99, 101]);  
 // // returns {odds: 6, evens: 2}
+
+countOddsAndEvens = (arr) => {
+    arr.reduce((acc, num) => {
+        if(num % 2 === 0) {
+            return
+        } else {
+            return
+        }
+    }
+}

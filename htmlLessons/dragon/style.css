@@ -1,0 +1,25 @@
+h1 {
+    padding: 10px;
+    border: 2px;
+    border-style: solid;
+    margin: 20px;
+}
+
+.container {
+    width: 100%;
+}
+
+
+#dragon {
+    float: left;
+    width: 30%;
+}
+
+#next-to-dragon {
+    float:left;
+    width: 60%;
+}
+
+#next-to-dragon p {
+    vertical-align: middle;
+}

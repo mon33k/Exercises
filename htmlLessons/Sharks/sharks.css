@@ -1,0 +1,32 @@
+
+.headerbox {
+    border: 5px solid black;
+    background-color: #efefef;
+    opacity: 0.5;
+    padding: inherit;
+    text-align: center;
+}
+
+body{
+    background-image: url("http://i.imgur.com/8t6S8qB.gif");
+    
+}
+
+.page {
+
+    border: 5px solid black;
+    background-color: #efefef;
+    opacity: 0.5;
+    padding: inherit;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.textboxbox {
+    border: 5px solid black;
+    background-color: #efefef;
+    opacity: 0.5;
+    padding: inherit;
+    font-weight: bold;
+    font-size: 20px;
+}

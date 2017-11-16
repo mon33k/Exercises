@@ -1,0 +1,30 @@
+#image {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    float: left;
+    width: 200px;
+    margin: 10px;
+    height: 300px;
+    border-style: dotted;
+}
+
+a:hover {
+    color: pink;
+    text-decoration: underline;
+}
+    
+
+.facts {
+    position: relative;
+    text-align: left;
+    font-family: sans-serif;
+   
+}
+
+h1 {
+    font-family: serif;
+}
+

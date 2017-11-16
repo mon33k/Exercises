@@ -1,0 +1,53 @@
+#navigation {
+    margin: 25px;
+    padding: 0;
+    display:inline;
+    }
+
+    #navigation ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+   
+    #navigation li{
+        padding: .5em;
+        background-color: grey;
+        margin: 5.5px;
+        float: left;
+    }
+  
+    
+    #case {
+        background-color: lightgrey;
+        padding: 0;
+        margin: 5px;
+        width: 400px;
+        height: 200px;
+        text-align: left;
+        clear: both;
+    }
+    p {
+        
+        display: inline;
+        
+    }    
+  
+
+    #footer {
+        background-color: grey;
+        width: 400px;
+    }
+        
+    #footer ul {
+        
+        display: inline;
+
+    }
+        
+    #footer li {
+
+    }
+        
+        

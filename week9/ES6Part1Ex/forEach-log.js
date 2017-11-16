@@ -2,26 +2,10 @@
 
 // Write a function that uses the forEach array method to log every member of an array to the console. The function should only take one argument, the array. The function should NOT use a for loop.
 
-function logElem (arr) {
-    arr.forEach(function(value, index, array) {
-
+let logElem = (arr) => {
+    arr.forEach(elem => {
+        console.log(elem)
     })
 }
 
-// var animals = [
-//     'dog',
-//     'cat',
-//     'giraffe',
-//     'moose'
-//   ];
-  
-//   animals.map(function(animal) {
-//     return animal.length;
-//   }); // [3, 3, 6, 5]
-  
-//   animals.map((animal) => {
-//     return animal.length;
-//   }); // [3, 3, 6, 5]
-  
-//   animals.map(animal => animal.length); // [3, 3, 6, 5]
-  
+logElem([1, 2, 3, 4, 5, 6, 7])

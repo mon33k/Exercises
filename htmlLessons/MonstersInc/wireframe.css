@@ -1,0 +1,24 @@
+h1 {
+    background-color: #4A4D9C;
+    padding: 10px;
+    font-family: impact;
+    text-align: left;
+    color: white;
+    position: relative;
+    font-size: 18px;
+
+}
+
+
+.button {
+    padding: 5px;
+    width: 200px;
+    background-color: #dc789d;
+    text-align: center; border-radius: 50px;
+    font-family: impact;
+    color: white;
+
+}
+image {
+    float: left;
+}

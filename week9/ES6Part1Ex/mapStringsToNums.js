@@ -6,3 +6,11 @@
 
 // stringToNums(["4", "3", "9"]); //returns [4,3,9]
 // stringToNums(["1", "22", "7"]); //returns [1,22,7]
+
+const stringsToNums = (arr) => {
+    return arr.map(elem => {
+       return Number(elem);
+    });
+}
+
+console.log(stringsToNums(["1", "2", "three", "four"]));

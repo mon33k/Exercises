@@ -6,3 +6,17 @@
 
 // filterEvens([1, 2, 3, 11, 12, 13]); //returns [2,12]
 // filterEvens([22, 2, 31, 110, 6, 13]); //returns [22,2,110,6]
+
+const filterEvens = (arr) => {
+    let newArr = [];
+    arr.filter(elem => {
+        switch(true) {
+            case elem % 2 === 0:
+                newArr.push(elem)
+            break;
+        }
+    })
+    console.log(newArr);
+}
+
+filterEvens([10, 9, 30, 29, 2, 4, 3])

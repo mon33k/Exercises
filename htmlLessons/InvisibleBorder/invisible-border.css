@@ -1,0 +1,44 @@
+body{
+    background-image: url( "bamboo.jpg");
+}
+
+
+a, a:link  {
+    color: blue;
+
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover, a:active {
+    color: green;
+    font-weight: bold;
+}
+
+p:first-of-type::first-line {
+    text-transform: uppercase;
+}
+
+/* This is modifying the first letter of the header 1 and header 2*/
+h1 + p::first-letter,
+h2 + p::first-letter  {
+    font-size: 3.8em;
+    float: left;    
+    margin-right: 0.2em;
+    margin-top: -0.15em;
+    margin-bottom: -0.1em;
+}
+
+p:nth-of-type(3)::first-line {
+    background-color: pink;
+}
+
+img {
+    border: 5px solid rgba(0,0,0,0);
+}
+
+img:hover {
+    border: 25px solid orange; 
+}

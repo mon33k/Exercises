@@ -1,0 +1,14 @@
+
+body {
+    width: 40em;
+    margin: auto;
+    font-size: 24px;
+}
+
+@media (max-width: 961px){
+    body{
+        width: 30em;
+    } 
+}
+
+

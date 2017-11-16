@@ -11,3 +11,19 @@
 // function log(val) {
 //   console.log(val);
 // }
+
+const forEach = (arr, callback) => {
+    arr.forEach(elem => {
+        callback(elem);
+    })
+}   
+
+const double = (num) => {
+    console.log(num + num);
+}
+
+const log = val => {
+    console.log(val)
+}
+forEach([1, 2, 3], double)
+forEach(['Hello ', 'world ', 'Im ', 'Bob'], log)

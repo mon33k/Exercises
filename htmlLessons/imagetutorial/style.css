@@ -1,0 +1,29 @@
+
+body {
+    background-color: white;
+}
+
+/*This allows you to change bg into a purple bg when someone tries to print */
+@media print {
+    body {
+        padding: 1em;
+        background-color: purple;
+    }
+}
+@media (max-width: 500px) {
+    p {
+    font-size: 12px;
+    font-family: monospace;
+    }
+}
+    @media (min-width: 500px) and (max-width: 600px) {
+     p {
+    font-size: 18px;
+     }
+}
+    @media (min-width: 600px) {
+    p {
+    font-size: 40px;
+    font-family: monospace;
+    }
+}
