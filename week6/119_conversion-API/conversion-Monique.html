@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="conversion-Monique.js" defer="defer"></script>
+   <!-- using defer makes you not need to use DOMContentLoaded -->
+   <link rel="stylesheet" href="conversion-Monique.css">
+   <title>Document</title>
+</head>
+<body>
+    <h1>Number Base Converter</h1>
+    <input type="text" name="num" id="num">
+    <br>
+    <button class="convert" data-base="bin" data-base-text="2" id="fromBinary">convert from binary</button>
+    <button class="convert" data-base="dec" data-base-text="10" id="fromDec">convert from decimal</button>
+    <button class="convert" data-base="hex" data-base-text="16" id="fromHex">convert from Hexidecimal</button>
+    
+    <p>Original Number: <span id="origNum"></span></p>
+    <p>Original Base: <span id="origBase"></span></p>
+
+    <p>As Binary: <span id="asBin"></span></p>
+    <p>As Decimal: <span id="asDec"></span></p>
+    <p>As Hexidecimal: <span id="asHex"></span></p>
+    
+</body>
+</html>

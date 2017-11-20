@@ -1,0 +1,93 @@
+body, html {
+    background-color: #f6f6f6;
+}
+#painting {
+    background-color: #fff4db;
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 0px #8d8d8d;
+}
+#toprow {
+    height: 290px;
+}
+/* Upper Right Red Box  */
+#bigbox {
+    width: 290px;
+    height: 290px;
+}
+.red {
+    background-color:
+    red;
+}
+.right { float: right; }
+
+/* Upper Left Black Divider */
+#divider1 { 
+    height: 290px; 
+    width: 10px;
+}
+.black {
+    background-color: 
+    black;
+}
+
+/* Upper Left Beige Box */
+.mediumbox {
+    width: 100px;
+    height: 140px;
+}
+#divider2 {
+    height: 10px;
+    width: 100px;
+}
+#middlerow {
+    width: 400px;
+    height: 10px;
+}
+
+/* Bottom Left Blue Box*/
+#smallbox {
+    width: 100px;
+    height: 100px;
+}
+.blue {
+    background-color:
+    blue;
+}
+
+#divider3 {
+    width: 10px;
+    height: 100px;
+}
+.left { float: left; }
+
+
+
+#divider4 {
+    width: 10px;
+    height: 100px;
+}
+#smallerbox2 {
+    width: 20px;
+    height: 45px;
+}
+    .yellow {
+    background-color: 
+    rgb(214, 214, 30);
+}
+
+#largebox {
+    height: 100px;
+    width: 260px;
+}
+
+#divider5 {
+    height: 10px;    
+    width: 20px;
+}
+.right { float: right; }
+
+

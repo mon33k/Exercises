@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="coords">
+        Random words
+    </div>
+    <script>
+        //Using DOMContentLoaded - Waits until content is loaded then run the script
+        document.addEventListener("DOMContentLoaded", function() {
+            var coords = document.querySelector('#coords')
+            console.log(coords)
+        });
+        //This code changes the ID text of coords into x and y coordinates of where your mouse is on the screen 
+        // var cordinates =  document.getElementById("coords")
+        // document.addEventListener('mousemove', function(event) {
+        //     cordinates.innerHTML = "Coordinates " + event.clientX + ":" + event.clientY
+        // })
+
+
+
+    </script>
+</body>
+
+</html>

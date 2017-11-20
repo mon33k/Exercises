@@ -1,0 +1,25 @@
+<!-- Lister 1
+Using the files lister.html and lister.js, build a page with an empty unordered list and a form containing a single text input field. When the form is submitted, the page should not reload. Instead, use document.createElement() to build a list item (li) where the innerText is the value in the text input field. Add this list item to the end of the unordered list. Also, reset the value of the text input field to an empty string.
+
+Continuing with the files lister.*, make is so that when a user clicks an item on the list, the text of the item receives a line-through styling to signify that it is completed. If the user clicks a completed item, the line-through styling should be removed.
+
+Continuing with the files lister.*, add a button with the text, "Remove all completed items." When a user clicks the button, every finished item (ie every item with a line-through) should be removed from the page. HINT: You can use Element.style.textDecoration to see if an item is "completed". -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="lister.js"></script>
+   <link rel="stylesheet" href="lister.css">
+    <title>Document</title>
+    <h1>Task List</h1>
+</head>
+<body>
+    <form id="form">
+        <input type="text" id="userInput">
+    </form>
+
+    <button id="clearBtn" type="submit">Remove all completed items</button>
+
+    <ol id="lister"></ol>
+</body>
+</html>

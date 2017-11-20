@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito|Spectral+SC");
+
+body, input, button {
+    font-family: "Nunito";
+    
+}
+
+.smaller {
+    font-size: 80%
+}
+
+h1 {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "tl tr"
+    "bl br";
+    width: 1000px;
+    height: 1000px;
+}
+
+#tl {
+    grid-area: tl;
+    width: 500px;
+    height:500px;
+    background-color: blue
+    
+}
+
+#tr {
+    grid-area: tr;
+    width:500px;
+    height:500px;
+    background-color: red
+}
+
+#bl {
+    grid-area: bl;
+    width:500px;
+    height:500px;
+    background-color: yellow
+}
+
+#br {
+    grid-area: br;
+    width:500px;
+    height:500px;
+    background-color: green;
+}

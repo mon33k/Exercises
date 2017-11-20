@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Spectral+SC");
+
+body {
+    background-color: limegreen;
+    color: magenta;
+    font-family: "Spectral SC";
+}
+
+#clearBtn {
+    background-color: magenta;
+    color: lime;
+    font-family: "Spectral SC"
+}

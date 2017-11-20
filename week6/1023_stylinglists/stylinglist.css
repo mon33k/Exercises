@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #111;
+}
+
+table {
+    width: 39em;
+}
+
+td, th {
+    padding: 5px;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: bold;
+    border-top: 2px solid #ccc;
+    border-bottom: 3px solid #000;
+    text-align: left;
+    letter-spacing: 0.1em;
+}
+
+tr:nth-child(2n + 1) {
+    background-color: #eee;
+}
+tr:hover {
+    background-color: rgba(236, 183, 122, 0.96)
+}

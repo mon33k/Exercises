@@ -1,0 +1,93 @@
+<html>
+<head>
+    <h1>Did you like our Ghost Buster Services?</h1>
+</head>
+<body>
+    <form action="http://www.example.com/login.php">
+        <fieldset>
+            <legend>
+                Your Details: 
+            </legend>
+            <label>
+                First Name:
+                <input type="text" name"First Name:" size="15"
+                maxlength="30" />
+            </label>
+            <br />
+            <label>
+                Last Name: 
+                <input type="text" name"Last Name:" size="15"
+                maxlength="30" />
+            </label> 
+            <br />
+            <label>
+                Address: 
+                <input type="text" name"Address:" size="15"
+                maxlength="30" />
+            </label>
+            <br />
+            <p>State: </p>
+            <select name="states">
+                <option value="NY">New York</option>
+                <option value="NJ">New Jersey</option>
+            </select>
+        </fieldset>
+        <br />
+        <fieldset>
+        <form action="http://www.example.com/login/"
+        method="post">
+            <label for="username">Username:</label>
+            <input type="text" name="username"
+                required="required" /><br />
+            <label for="password">Password:</label>
+            <input type="password" name="password"
+                required="required" />
+            <input type="submit" value="Submit" />
+        </form>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>
+                Survey Questions
+            </legend>
+            <form action="http://www.example.com/profile.php">
+                <p>Were we effective in getting rid of your ghost?
+                    <br />
+                    <input type="radio" name="help" value="no"/> 
+                        No it's still here
+                    <input type="radio" name="help" value="sortof" />
+                        It comes and goes
+                    <input type="radio" name="help" value="yes" />
+                        The ghost is completely gone
+                </p>
+            </form>
+        </fieldset>
+        <br />
+        <fieldset>
+            <form action="http://www.example.com/profile.php">
+                <p>Would you call us again?
+                    <br />
+                    <input type="checkbox" name="service"
+                        value="no" checked="checked" /> Nope
+                    <input type="checkbox" name="service"
+                        value="maybe" /> Maybe
+                    <input type="checkbox" name="service"
+                        value="definitely" /> Definitely
+                </p>
+            </form>
+        </fieldset>
+        <br />
+        <fieldset>
+            <form action="http://www.example.com/comments.php">
+                <p>
+                    Additional Comments:
+                </p>
+                <textarea name="comments" cols="20" rows="4">
+                    Enter your comments...
+                </textarea>
+            </form>
+        </fieldset>
+        <br />
+        <input type="submit" value="Submit Survey" />
+    </body>
+</html>
