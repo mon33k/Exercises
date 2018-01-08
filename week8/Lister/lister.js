@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function (event) {
-    let list = document.querySelector('#lister');
+    let list = document.querySelector('#list');
     let form = document.getElementById('userInput');
 
     document.addEventListener('submit', function (event) {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     })
     lister.addEventListener("click", function (event) {
         let target = event.target
-        if (target.tagName.toUpperCase() == 'LI') {
+        if (target.tagName.toUpperCase() == 'LI') {     // From lines 19 - 24 is what I copied from my instructor. 
             target.style.textDecoration = target.style.textDecoration !== 'line-through' ? 'line-through' : 'none'
         } else {
 

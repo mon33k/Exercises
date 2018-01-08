@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS 
+    customercustomerdemo, 
+    customerdemographics,
+    employeeterritories,
+    order_details,
+    orders,
+    ... ;    
+- Drops the table into the data base if it exists 
+
+CREATE TABLE categories
+- Creates the table passing the column values      categoryid, 
+     categoryname, 
+     description, 
+     picture,
+     
+
+CREATE TABLE customer 

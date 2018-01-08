@@ -10,81 +10,74 @@ app.get('/', (req, res) => {
     <p>enter either /rock /paper or /scissors</p>`)
 }) // routes the '/' URL path to produce a response of 'Hello World!'
 
-app.get('/rock', (req, res) => {
-    res.send({ "user": user[0], "ai": aiRandom(ai), "result": result(aiChoice) })
+app.get('/:userChoice', (req, res) => {
+    res.send(makeResultObj(req.params.userChoice, aiChoice()));
 
-}) //
+}) // appends to end of URL path to produce a JSON object of user, ai and result.
 
-app.get('/paper', (req, res) => {
-    res.send({ "user": user[1], "ai": aiRandom(ai), "result": result(aiChoice) })
-}) //
 
-app.get('/scissors', (req, res) => {
-    res.send({ "user": user[2], "ai": aiRandom(ai), "result": result(aiChoice) })
-}) //
 
-let ai = Math.floor(Math.random() * 3);
-const aiRandom = (ai) => {
-    let choice = ["rock", "paper", "scissors"]
-    let aiRes;
-    let i = 0;
-    while (i < choice.length) {
-        switch (true) {
-            case i === 0 && ai === 0:
-                aiRes = "rock";
-                break;
+const aiChoice = () => {
+    let ai = Math.floor(Math.random() * 3);
+    switch (ai) {
+        case 0:
+            return "rock"
+        break;
+            
+        case 1:
+            return "paper"
+        break;
 
-            case i === 1 && ai === 1:
-                aiRes = "paper";
-                break;
-
-            case i === 2 && ai === 2:
-                aiRes = "scissors";
-                break;
-        }
-        i++
-        return aiRes;
+        case 2:
+            return "scissors"
+        break;
     }
 }
 
-const aiChoice = aiRandom();
-let user = ["rock", "paper", "scissors"]
-const result = (cb) => {
-    let userRes;
-        switch (elem) {
-            case "rock":
-                if (aiChoice === "rock") {
-                    userRes = "tie";
-                } else if (aiChoice === "paper") {
-                    userRes = "lose";
-                } else if (aiChoice === "scissors") {
-                    userRes = "win";
-                }
-                break;
 
-            case "paper":
-                if (aiChoice === "rock") {
-                    userRes = "win";
-                } else if (aiChoice === "paper") {
-                    userRes = "tie";
-                } else if (aiChoice === "scissors") {
-                    userRes = "lose";
-                }
-                break;
+const makeResultObj = (userChoice, aiPick) => { //aiPick is going to be aiChoice()
+    let obj = {};   
+    switch (aiPick) {   //building the object
+        case "rock":
+           obj.aiPick = aiPick
+           obj.userChoice = userChoice  
+           if(userChoice === "rock") {
+               obj.result = "tie"       //creating the variable and key of result
+           } else if (userChoice === "paper") {
+               obj.result = "win"
+           } else if (userChoice === "scissors") {
+               obj.result = "lose"
+           }
+        break;
 
-            case "scissors":
-                if (aiChoice === "rock") {
-                    userRes = "lose";
-                } else if (aiChoice === "paper") {
-                    userRes = "win";
-                } else if (aiChoice === "scissors") {
-                    userRes = "tie";
-                }
-                break;
-        }
-    })
-    return userRes;    
+        case "paper":
+            obj.aiPick = aiPick
+            obj.userChoice = userChoice
+            if(userChoice === "rock") {
+                obj.result = "win"       //creating the variable and key of result
+            } else if (userChoice === "paper") {
+                obj.result = "tie"
+            } else if (userChoice === "scissors") {
+                obj.result = "lose"
+            }
+        break;
+
+        case "scissors":
+            obj.aiPick = aiPick
+            obj.userChoice = userChoice
+            if(userChoice === "rock") {
+                obj.result = "lose"       //creating the variable and key of result
+            } else if (userChoice === "paper") {
+                obj.result = "win"
+            } else if (userChoice === "scissors") {
+                obj.result = "tie"
+            }
+        break;
+    }
+    return obj;
 }
+
+
     app.listen(port, () => {
         console.log(`Example app listening on port ${port}`)
     }) // asks our server to listen for requests on port 8000, logging to the console to confirm that things are working
